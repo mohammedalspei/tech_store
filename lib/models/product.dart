@@ -2,9 +2,10 @@ class Product {
   final String id;
   final String name;
   final String brand;
-  final double price;
-  final String image;
   final String description;
+  final double price;
+  final double? originalPrice;
+  final String image;
   final String category;
   bool isFavorite;
 
@@ -12,9 +13,10 @@ class Product {
     required this.id,
     required this.name,
     required this.brand,
-    required this.price,
-    required this.image,
     required this.description,
+    required this.price,
+    this.originalPrice,
+    required this.image,
     required this.category,
     this.isFavorite = false,
   });
